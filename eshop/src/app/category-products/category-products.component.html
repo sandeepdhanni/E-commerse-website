@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<section class="featured-products">
+    <div class="container">
+
+  <div class="product" *ngFor="let product of products" >
+    <img [src]="product.imageUrl"  alt="Product 1"  (click)="addToCart(product.productId)">
+
+    <div><h3>{{ product.prodName }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3></div>
+    <div>{{product.prodBrand}}</div>
+    
+    <div><p>Description: {{ product.prodDesc }} &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</p></div>
+
+    <span class="price">&#8377; {{ product.price }}</span> <!-- Use the rupee symbol --> 
+    <button (click)="addToCart(product.productId)">Add to Cart</button> 
+  </div>
+
+  
+  </div>
+</section>

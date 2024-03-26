@@ -1,0 +1,54 @@
+/* Apply general styles to the form */
+form {
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 5px;
+    padding-left: 20%;
+    padding-top: 2%;
+    margin-left: 20%;
+}
+/* Style form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style form inputs and error messages */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.text-danger {
+    color: red;
+}
+
+/* Style the Register button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Center the form on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+<!-- carousel.component.html -->
+<div class="carousel-container">
+    <div class="carousel-slide">
+      <div class="carousel-item">
+        <a href="https://example.com">
+          <img src="assets/carousel-images/image1.jpg" alt="Image 1">
+          <div class="overlay">Click me</div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://example.com">
+          <img src="assets/carousel-images/image2.jpg" alt="Image 2">
+          <div class="overlay">Click me</div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://example.com">
+          <img src="assets/carousel-images/image3.jpg" alt="Image 3">
+          <div class="overlay">Click me</div>
+        </a>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+  
+  <div class="carousel-navigation">
+    <div (click)="prevSlide()" class="carousel-nav-button">Previous</div>
+    <div (click)="nextSlide()" class="carousel-nav-button">Next</div>
+  </div>
+  <br><br><br><br><br><br><br><br>

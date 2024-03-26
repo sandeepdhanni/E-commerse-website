@@ -1,0 +1,41 @@
+/* footer.component.css */
+
+.myntra-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.social-media img {
+  max-width: 24px;
+  height: auto;
+}

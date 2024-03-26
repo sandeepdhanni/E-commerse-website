@@ -1,0 +1,107 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+    <title>Sign Up</title>
+</head>
+<body>
+
+<div id="boxbody">
+    <!-- <div class="imgbo">
+        <img src="assets\sign-up_img.avif" alt="">
+    </div> -->
+    <div class="box">
+        <div class="signup">
+            <h2>Sign up</h2>
+
+            <form #regForm="ngForm"(ngSubmit)="submitRegForm(regForm.value)"  >
+
+
+                <div class="form-group"  >
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="custName"ngModel
+                    #custName="ngModel" required>
+                </div>
+                <div *ngIf="custName.invalid && (custName.dirty || custName.touched) " class="alert alert-danger">
+                    <h5>Please enter name</h5>
+                  </div>
+            
+
+                <div>
+                    <label for="pass">Gender</label>
+                    <select class="form-select" aria-label="Default select example" name="gender"ngModel>
+                        <option selected>Male</option>
+                        <option value="Female">Female</option>
+                        <option value="others">Others</option>
+                      </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mob">Mobile</label>
+                    <input type="tel" class="form-control" id="mob" placeholder="Mobile Number*" 
+                     name="mobileNo"ngModel  #mobileNo="ngModel"  required   pattern="[0-9]{10}"> 
+                    <div *ngIf="mobileNo.invalid &&(mobileNo.dirty || mobileNo.touched)" class="alert alert-danger">
+                        <h5>Please enter valid  mobile number</h5>
+                      </div>
+                </div>
+               
+
+                <div class="form-group">
+                    <label for="mail">Email</label>
+                    <input type="email" class="form-control" id="mail"  placeholder="name@example.com"  name="email"ngModel
+                     #email="ngModel" [email]="true"   required>
+                </div>
+
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                    <h5>Please Enter Email</h5>
+                  </div>
+                  
+
+
+                <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" id="pass1" placeholder="Create a Password" 
+                    name="password"ngModel  #password="ngModel" required>
+                </div>
+                <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+                    <h5>Please enter password</h5>
+                  </div>
+
+                <div class="form-group"  >
+                    <label for="pass">Confirm Password</label>
+                    <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" 
+                    name="repassword"ngModel #repassword="ngModel"  required>
+                </div>
+
+                <div *ngIf="repassword.invalid && (repassword.dirty || repassword.touched) " class="alert alert-danger">
+                    <h5> Please re-enter password</h5>
+                  </div>
+                  <!-- <div>  {{message}}</div> -->
+                  <div *ngIf="password.value !== repassword.value && repassword.touched" class="alert alert-danger">
+                    <h5>Passwords do not match</h5>
+                  </div>
+    
+                  
+               
+                <p>By continuing, I agree to the <a href="#"><span>Terms of Use</span></a> and
+                    <a href="#"><span>privacy policy</span></a></p>
+                    <button >continue</button> 
+                    
+                    
+                <p>Have trouble logging in?<a href="#"><span>Get help</span></a></p>
+                <p>Already have an account? <a routerLink="/login"><span id="login">Login</span></a></p>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

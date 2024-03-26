@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="product" *ngIf="product" >
+<div class="product">
+    <div class="product-grid">
+      <div class="product-image">
+        <img [src]="product.imageUrl"  alt="Product 1">
+      </div>
+      <div class="product-details">
+        <h1>{{ product.prodName }}</h1>
+        <h2>{{product.prodBrand}}</h2>
+        <p class="description">{{ product.prodDesc }}</p>
+
+        <div class="size-options">
+            <h2>select size</h2>
+            <label *ngFor="let size of ['S', 'M', 'L', 'XL', 'XXL']"> 
+                <h2><input type="radio" name="size" (change)="selectSize(size)">  {{ size }} &nbsp;&nbsp;</h2>
+            </label>
+          </div><br>
+
+        <div class="price">
+          <span><h2>{{ product.price | currency : 'INR'}}</h2></span>
+
+        
+
+          <button (click)="addToCart()"   [disabled]="!selectedSize">ADD TO CART</button> 
+          <button class="wishlist"   > wishlist</button> 
+      
+
+        </div><br>
+
+        <h2>product details</h2>
+        <p class="description"> {{ product.prodDesc }}</p>
+        <h2>size & fit </h2>
+        <p class="description"> Slim Fit  <br>
+        The model (height 6') is wearing a size M</p>
+        <h2>Matarial & care </h2>
+        <p  class="description">Material: 100% Super Combed Cotton <br>
+         Machine Wash</p>
+        
+    </div>
+
+   
+
+
+</div>
+<div>

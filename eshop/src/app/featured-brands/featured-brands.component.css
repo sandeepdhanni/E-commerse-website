@@ -1,0 +1,77 @@
+
+.shop-by-category {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  margin-left: 30px;
+}
+
+.offer-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.offer-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  object-fit: cover; /* Ensure images don't stretch or distort the card */
+  max-height: 150px; /* Set a maximum height for the images to control size */
+}
+
+.offer-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.offer-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff3f6c;
+}
+
+button {
+  background-color: #ff3f6c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: #ef143c;
+}

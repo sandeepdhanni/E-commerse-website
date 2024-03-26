@@ -1,0 +1,28 @@
+.captcha-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.captcha-box {
+  display: inline-block;
+  padding: 10px;
+  font-size: 36px; /* Make the font size larger */
+  color: white;
+  background-color: #3498db; /* Background color for the captcha box */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add some margin to separate from the input field */
+}
+
+.captcha-text {
+  font-size: 24px; /* Reduce font size slightly for the generated captcha text */
+}
+
+/* You can define your own background color here */
+.correct {
+  background-color: green;
+}
+
+/* You can define your own background color here */
+.incorrect {
+  background-color: red;
+}

@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<div class="cart-container">
+  <h1>Your Orders</h1>
+
+
+   <div class="amg" *ngIf="!isLoggedIn" >
+
+   
+      <span class="">Please login to view your cart</span>
+   
+      <br><br>
+      <button class="checkout-button" (click)="login()"> Login </button>
+    
+    </div>
+
+  <!-- <div class="amg" *ngIf="!isLoggedIn" > -->
+
+    <div class="amg" *ngIf="orders==0   && isLoggedIn "   >
+    <!-- <span class="">Your cart is currently empty.</span> -->
+
+    
+ 
+    
+    <h4>There is nothing in your orders list.let's order </h4>
+  
+    <br><br>
+    <button class="checkout-button" (click)="shopClick()"> Return to shop</button>
+  
+  </div>
+  
+  <div class="amg" *ngIf="isLoggedIn"  >
+  <div *ngFor="let product of orders" class="cart-item">
+    
+    <img [src]="product.imageUrl" alt="{{ product.Name }}" class="item-image">
+    <div class="item-details">
+      <h2>{{ product.product.prodBrand}}</h2>
+      <p> {{product.product.prodDesc}}</p>
+     <p>size: {{product.productSize}}   &nbsp;&nbsp;<span> Price: &#8377; {{ product.orderAmount }} </span></p> 
+      
+     <p>OrderId: {{product.orderId}} &nbsp;&nbsp;<span> Order status:{{product.orderStatus}} </span></p>
+    
+       <p>Payment type :{{product.paymentType}} </p>
+      
+     
+       <button  class="remove-button"    (click)="cancelOrder(product.orderId)">cancel order</button>
+    </div>
+    
+  </div>
+ 
+
+ 
+
+
+    
+  
+
+  </div>
+</div>
+
+
+
+
+

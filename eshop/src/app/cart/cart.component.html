@@ -1,0 +1,73 @@
+<app-header></app-header>
+
+<div class="cart-container">
+  <h1>Your Shopping Cart</h1>
+
+
+   <div class="amg" *ngIf="!isLoggedIn" >
+
+   
+      <span class="">Please login to view your cart</span>
+   
+      <br><br>
+      <button class="checkout-button" (click)="login()"> Login </button>
+    
+    </div>
+
+  <!-- <div class="amg" *ngIf="!isLoggedIn" > -->
+
+    <div class="amg" *ngIf="cartItems==0   && isLoggedIn "   >
+    <!-- <span class="">Your cart is currently empty.</span> -->
+
+    <img  class="emptyimg" src="assets\empty-bag.jpg" alt="image"  >
+ 
+    <h2>Hey,it feels so light! </h2>
+    <h4>There is nothing in your bag.let's add some items </h4>
+  
+    <br><br>
+    <button class="checkout-button" (click)="shopClick()"> Return to shop</button>
+  
+  </div>
+  
+  <div class="amg" *ngIf="isLoggedIn"  >
+  <div *ngFor="let product of cartItems" class="cart-item">
+
+    <button  (click)="deleteCartById(product.cartId)" class="remove-button">x</button>
+    <img [src]="product.imageUrl" alt="{{ product.product.Name }}" class="item-image">
+    <div class="item-details">
+      <h2>{{ product.product.prodName }}</h2>
+      <p>Price: &#8377; {{ product.product.price }} </p>
+      <div class="quantity-size">
+        <div class="quantity">
+          <label>Quantity:</label>
+          <select [(ngModel)]="product.quantity">
+            
+            <option *ngFor="let i of quantityOptions" [ngValue]="i">{{ i }}  </option>
+          </select>
+        </div>
+        <div class="size">
+          <label>Size: {{ selectedSize}} </label>
+          <!-- <select [(ngModel)]="product.size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="cartItems.length > 0" class="total">
+    <h2>Total: &#8377; {{totalPrice }}</h2>
+    <button (click)="deleteCart()"   class="checkout-button">Clear Cart</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    
+    <button   (click)="placeOrder()" class="checkout-button">Proceed to Checkout</button>
+
+  </div>
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,72 @@
+/* body{
+  
+ } */
+ #boxbody{
+    background-color: white;
+    width :400px;
+    margin: auto;
+    margin-top: auto;
+    
+    text-decoration: none;
+  }
+
+  .box{
+    padding: 20px;
+  }
+  #login{
+    font-weight: 800;
+  }
+
+  img{
+    width: 100%;
+  }
+h2{
+    font-size: 2.3rem;
+    text-align: center;
+    margin-right: 50px;
+  }
+  h2 span,p{
+    color: gray;
+  }
+  p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  p a{
+    text-decoration: none;
+  }
+
+  p span{
+    color:#ff3f6c;
+   
+  }
+  
+ 
+  button{
+    width: 100%;
+    color: white;
+    background-color:#ff3f6c ;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 0rem;
+    cursor: pointer;
+  }
+  
+   h3{
+   margin-top: 1.5rem;
+   font-size: 1.5rem;
+     }
+  
+   #signin{
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ff3f6c;
+     
+  }
+
+
+   
+ 
+  

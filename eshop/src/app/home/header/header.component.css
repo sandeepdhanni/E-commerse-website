@@ -1,0 +1,361 @@
+*{
+ box-sizing: border-box;
+ padding: 0px;
+ margin: 0px;
+}
+
+#navbar {
+  display: flex;
+  background-color: white;
+
+  height: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  background-color: #FFFFFF;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.nav-left {
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: max-content;
+  height: 100%;
+}
+
+.logo {
+  width: 65px;
+  height: 75%;
+  /* cursor: pointer; */
+}
+
+#logo1 {
+  height: 36px;
+  width: 53px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.menu_div {
+  margin-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  width: 490px;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.nav-right {
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+
+}
+
+
+.div1>span {
+  margin-left: -370px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+#search {
+  height: 32px;
+  width: 340px;
+  border-radius: 5px;
+  background-color: rgb(247, 247, 252);
+  padding-left: 50px;
+  border-left: 1px solid grey;
+  border: 0;
+}
+
+#search:focus {
+
+  outline: none;
+  background-color: rgb(247, 247, 252);
+}
+
+#other_div {
+  display: flex;
+  margin-left: 380px;
+
+  justify-content: space-evenly;
+  width: 250px;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+#other_div>div {
+  height: max-content;
+}
+
+#other_div>div>h5>a {
+  color: rgb(40, 44, 63);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#other_div>div>h5 {
+  line-height: 0px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+
+#profile {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+#main {
+  display: inline-block;
+  position: relative;
+  height: 70%;
+}
+
+#main:hover {
+  border-bottom: 3px solid red;
+}
+
+#button {
+  background-color: white;
+  transition: .3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(40, 44, 63);
+  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#button:hover {
+  color: black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box7 {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  z-index: 1;
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+  transition: .5s;
+  opacity: 0;
+  border-radius: 0px 0px 12px 12px;
+  margin-top: 36px;
+}
+
+#box1 {
+
+  margin-left: -80px;
+}
+
+#box2 {
+
+  margin-left: -50px;
+}
+
+#box3 {
+
+  margin-left: -170px;
+}
+
+#box4 {
+
+  margin-left: -230px;
+}
+
+#box5 {
+
+  margin-left: -290px;
+}
+
+#box7 {
+  margin-left: -150px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+#ls {
+  margin-left: 15px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  height: 40px;
+  border: 1px solid rgb(233, 233, 233);
+}
+
+#ls:hover {
+  border: 1px solid black;
+  transition: .5s;
+}
+
+#lp {
+  margin-left: 15px;
+}
+
+#lh5 {
+  text-align: left;
+  padding-left: 15px;
+
+}
+
+#lh5:hover {
+  color: black;
+}
+
+#new {
+  background-color: brown;
+  color: white;
+  border: 0;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 0px 5px 5px 5px;
+
+}
+
+#i1 {
+  font-size: 17px;
+  color: black;
+}
+
+#i2 {
+  font-size: 17px;
+  color: black;
+}
+
+#profile_tag {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 17px;
+  color: black;
+
+}
+
+#profile_tag>a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2px;
+
+}
+
+#wishlist_tag,
+#cart_tag {
+  font-size: 14px;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+
+}
+
+
+#main:hover div {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+#box {
+  display: flex;
+}
+
+
+
+#d1 {
+  margin-left: 20px;
+}
+
+#d2,
+#d3,
+#d4,
+#d5,
+#d6 {
+  margin-left: 30px;
+}
+
+#d4 {
+  color: red;
+}
+
+#d6 {
+  margin-right: 20px;
+}
+
+.h5 {
+  margin-left: 40px;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.h5 a {
+  text-decoration: none;
+  color: red;
+
+
+}
+
+.h5:hover {
+  transition: .3s;
+  color: blue
+}
+
+.h5 a:hover {
+  transition: .3s;
+  color: blue
+}
+
+ul li {
+  line-height: 29px;
+  list-style-type: none;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover {
+  color: red;
+  transition: .2s;
+}
+
+#box {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+
+#wish,
+#cartlist {
+  font-size: 10px;
+}
+
+
+#login {
+  text-decoration: none;
+  color: black;
+}

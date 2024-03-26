@@ -1,0 +1,36 @@
+ <app-header> </app-header>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<div class="login-container">
+    <div class="logo">
+        <img src="assets/loginp/imgbin_shopify-e-commerce-logo-web-design-png.png" alt="Your Logo" class="my-logo">
+    </div>
+    <h2>Login to Your Account</h2>
+    <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm.value)" novalidate>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" name="email"ngModel [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" name="password"ngModel  [(ngModel)]="password" required>
+        </div>
+        <button class="btn btn-primary" >Login</button> <br>
+          
+
+      
+    </form>
+    <p>Forgot your password? <a href="/forgot-password">Reset it</a></p>
+    <p>Don't have an account? <a routerLink="/register">Register</a></p>
+    <p>login as seller   <a routerLink="/sellerLogin">Seller login</a></p>
+
+
+    <!-- Login using google: -->
+    <!-- <asl-google-signin-button *ngIf="!user"></asl-google-signin-button> -->
+    <!-- <button (click)="signInWithGoogle()">Sign in with Google</button> -->
+    <ng-container *ngIf="!(authService.authState | async)">
+        <asl-google-signin-button></asl-google-signin-button>
+      </ng-container>
+
+</div>

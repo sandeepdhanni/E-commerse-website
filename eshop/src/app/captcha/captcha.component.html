@@ -1,0 +1,15 @@
+<!-- 
+<p>Generated Captcha: {{ generatedCaptcha }}</p>
+<input type="number" [(ngModel)]="userInput" placeholder="Enter Captcha">
+<button (click)="checkCaptcha()">Check Captcha</button>
+<p>{{ captchaResult }}</p> -->
+<div class="captcha-container">
+    <p>Generated Captcha:</p>
+    <div class="captcha-box" [style.background]="captchaBackgroundColor()">
+      {{ generatedCaptcha }}
+    </div>
+    <input type="number" [(ngModel)]="userInput" placeholder="Enter Captcha">
+    <button (click)="checkCaptcha()">Check Captcha</button>
+    <p>{{ captchaResult }}</p>
+  </div>
+  

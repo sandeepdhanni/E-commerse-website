@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css or styles.scss */
+@import 'ngx-toastr/toastr';
+
+
+/* 
+.ngx-toastr {
+    background-color: #4caf50; 
+    color: white; 
+    padding: 16px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+  } */
+
+ 
+  
+html, body { height: 100px }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

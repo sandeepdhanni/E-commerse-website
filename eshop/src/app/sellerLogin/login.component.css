@@ -1,0 +1,65 @@
+/* login.component.css */
+
+.login-container {
+    background-color: white;
+    width: 350px; /* Adjust the width as needed */
+    margin: auto;
+    margin-top: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .my-logo {
+    width: 80px; /* Adjust the width to match your desired size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Reduce the font size */
+    margin-bottom: 1.5rem; /* Add some spacing */
+    color: #333; /* Match the text color */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem; /* Add space between form elements */
+  }
+  
+  label {
+    display: block; /* Display labels as block elements */
+    font-size: 0.8rem; /* Reduce label font size */
+    color: #777; /* Adjust label text color */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    color: white;
+    background-color: #ff3f6c;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 1rem; /* Add space below the form */
+    cursor: pointer;
+    font-weight: 800;
+  }
+  
+  p {
+    font-size: 0.8rem; /* Reduce text size */
+    margin-top: 1rem; /* Add space between login and registration links */
+  }
+  
+  a {
+    color: #ff3f6c; /* Match the link color */
+    text-decoration: none;
+  }
+  
+  /* Additional styles as needed */
+  

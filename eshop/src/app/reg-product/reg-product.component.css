@@ -1,0 +1,18 @@
+#boxbody{
+    background-color: white;
+    width :400px;
+    margin: auto;
+    margin-top: auto;
+    
+    text-decoration: none;
+  }
+  button{
+    width: 100%;
+    color: white;
+    background-color:#ff3f6c ;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 0rem;
+    cursor: pointer;
+  }
